@@ -2,7 +2,7 @@
 
 1.用于`StringBuilder` / `StringBuffer`
 可变字符序列，做字符串拼接时比 “+” 高效得多。
-```
+```java
 StringBuilder sb = new StringBuilder("Hello");
 sb.append(' ');      // 追加一个字符
 sb.append("world");  // 追加字符串

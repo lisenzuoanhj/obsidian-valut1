@@ -4,7 +4,7 @@
 **返回值**：对应位置上的 `char` 值。
 **异常**：如果 `index < 0` 或 `>= length()`，会抛出 `StringIndexOutOfBoundsException`。
 
-```
+```java
 String s = "Hello";
 char c = s.charAt(1);   // 返回 'e'
 ```
