@@ -1,5 +1,5 @@
 [计算子数组的 x-sum II](https://leetcode.cn/problems/find-x-sum-of-all-k-long-subarrays-ii/)
-
+真受不了了 感觉好高深。
 ```java
 class Solution {
     private final TreeSet<int[]> L = new TreeSet<>((a, b) -> a[0] != b[0] ? a[0] - b[0] : a[1] - b[1]);
