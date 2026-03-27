@@ -85,7 +85,7 @@ request.setAttribute("books", books);
 
 ---
 
-# 超简短总结
+# 总结
 
 - **`setAttribute("名字", 数据)`**
 - **作用：Servlet 把数据塞进请求里**
