@@ -90,3 +90,40 @@
 
 - `name`：名字，JSP 用 `request.getParameter("username")` 取数据
 - `value`：默认值
+
+
+```jsp
+class="form-control"
+```
+`class` 是给标签**起一个样式名字**，让 CSS 去美化它。
+- `form-control`：
+    → 让输入框**变好看、变宽、变整齐**
+    → 一般是 Bootstrap 或项目自带 CSS
+    ![[Pasted image 20260327160046.png]]
+
+
+```jsp
+class="form-group"
+```
+
+
+
+JSP 自动获取项目根路径：`${pageContext.request.contextPath}`是啥？
+
+你可以把它理解成：**项目的 “家门地址”**
+
+比如你项目部署后，访问地址是：`http://localhost:8080/library`
+那么 `${pageContext.request.contextPath}`
+就自动等于   ==`/library`==。
+
+所以：
+```jsp
+href="${pageContext.request.contextPath}/css/style.css"
+```
+
+实际变成：
+```plaintext
+href="/library/css/style.css"
+```
+
+**作用：** 不管项目部署到哪里，都能**自动找到文件，不会找不到路径**。
