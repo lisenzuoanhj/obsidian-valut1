@@ -17,3 +17,6 @@ print("Hello World!");print("Hello Python!")
 
 # 两者的效果相同
 ```
+
+#### 快速增加行
+用 `shift + enter`。
