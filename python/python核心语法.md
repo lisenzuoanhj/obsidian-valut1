@@ -500,3 +500,58 @@ print(n)  #[198, True, 'A', 55, 2, 'pop up', 6, 4, 1]
 
 sum(a) #累加操作
 ```
+
+案例
+[[解包、组包]]
+[[in关键字]]
+[[列表推导式]]
+```python
+# 合并列表并去重  
+num_list1 = [19,23,54,64,875,20,109,232,123,54]  
+num_list2 = [55,80,72,35,60,123,54,29,91]  
+  
+for i in num_list2:  
+     num_list1.append(i)  
+# 2.解包
+# num = [*num_list1,*num_list2]
+# 3.直接合并
+#num = num_list1 + num_list2
+  
+# 结果为[19, 23, 54, 64, 875, 20, 109, 232, 123, 54, 55, 80, 72, 35, 60, 123, 54, 29, 91]  
+  
+# 去重  
+new_list = []  
+for i in num_list1:  
+    #判断new_list里面有没有这个元素  
+    if i not in new_list: 
+        new_list.append(i)  
+  
+print(new_list)
+# 结果为[19, 23, 54, 64, 875, 20, 109, 232, 123, 55, 80, 72, 35, 60, 29, 91]
+
+
+# 生成1-20的平方列表  
+# 从如下数字列表中提取出所有偶数，并计算其平方，组成一个新的列表  
+num_list = [19,23,54,64,87,20,109,232,123,43,26,55,72]  
+  
+# 1  
+plus = []  
+for i in range(1,21):  
+    plus.append(i ** 2)  
+print("1-20的平方列表为：",plus)  
+  
+#2 简化版   
+num_list2 = [i**2 for i in range(1,21)]  
+print(num_list2)  
+  
+dou_plus = []  
+print("数字列表中的偶数有：",end="")  
+for num  in num_list:  
+    if num % 2 ==0:  
+        dou_plus.append(num ** 2)  
+        print(num,end=" ")  
+#2 简化版
+dou_plus2 = [i **2 for num in num_list if num % 2 ==0]  
+print()  
+print("所有偶数的平方列表为：",dou_plus)
+```
