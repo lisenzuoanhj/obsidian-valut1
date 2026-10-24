@@ -20,3 +20,6 @@ print("Hello World!");print("Hello Python!")
 
 #### 快速增加行
 用 `shift + enter`。
+
+#### 删除缩进
+用 `shift+tab键`。
