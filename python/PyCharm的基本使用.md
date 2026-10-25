@@ -23,3 +23,6 @@ print("Hello World!");print("Hello Python!")
 
 #### 删除缩进
 用 `shift+tab键`。
+
+#### 列编辑
+用`alt + shift`，鼠标按住起始行下移到终止行，即可同时编辑选中的所有行。
